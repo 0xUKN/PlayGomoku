@@ -84,7 +84,7 @@ class IA():
 						self.simulation_plateau.grid[case[0]][case[1]] = 3
 					self.last_played = oldplayed
 		choice = random.choice(BEST_PLAY)
-		self.simulation_plateau.PlayPlayer(random.choice(BEST_PLAY), self.value)
+		self.simulation_plateau.PlayPlayer(choice, self.value)
 		return choice
 		
 
