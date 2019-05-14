@@ -39,7 +39,7 @@ class Plateau():
 		seqtab = self.extractSequences(last_played)
 		for decouped in self.splitSequences(seqtab):
 			if 1 not in decouped:
-				advP2 += decouped.count(2) ** 4
+				advP2 += decouped.count(2) ** 3
 			if 2 not in decouped:
 				advP1 += decouped.count(1) ** 4
 		self.advantages = (self.advantages[0] - advP1, self.advantages[1] - advP2)
@@ -51,7 +51,7 @@ class Plateau():
 		seqtab = self.extractSequences(last_played)
 		for decouped in self.splitSequences(seqtab):
 			if 1 not in decouped:
-				advP2 += decouped.count(2) ** 4
+				advP2 += decouped.count(2) ** 3
 			if 2 not in decouped:
 				advP1 += decouped.count(1) ** 4
 		self.advantages = (self.advantages[0] + advP1, self.advantages[1] + advP2)
