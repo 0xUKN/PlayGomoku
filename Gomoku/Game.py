@@ -70,7 +70,7 @@ class Game():
 				if i != (begin + 1):
 					inputList = ai.Play(self.plateau, max_depth)
 				else:
-					inputList = (4,4)
+					inputList = (3,0xb)
 					self.plateau.PlayPlayer(inputList, 2)
 				end = time.time()
 			last_played = inputList
